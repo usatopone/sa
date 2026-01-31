@@ -1,0 +1,1 @@
+# Budget Trails AU — Admin Notes (v2)\n\nOpen index.html directly. Relative paths ensure CSS/JS work offline.\n

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Food — Budget Trails Australia</title>
+<meta name="description" content="Local dishes, markets, costs, and hygiene basics.">
+<link rel="preload" href="assets/styles.css" as="style">
+<link rel="stylesheet" href="assets/styles.css">
+<script defer src="assets/site.js"></script>
+<meta name="theme-color" content="#0e7c86">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" role="banner">
+  <div class="container row between center">
+    <a class="brand" href="index.html">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <circle cx="32" cy="32" r="30" fill="currentColor" opacity=".12"/>
+        <path d="M16 36c8-6 24-6 32 0l-4 4c-6-4-18-4-24 0l-4-4z" fill="currentColor"/>
+        <circle cx="32" cy="26" r="5" fill="currentColor"/>
+      </svg>
+      <span class="brand-text">Budget Trails Australia</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+      <ul id="nav-list">
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="stay.html">Stay</a></li>
+        <li><a href="transport.html">Transport</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html" class="btn small">Build my budget plan</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="contact-meta" role="note">
+    Local guide: Kai Turner — contact <a href="mailto:hello@budgettrails.nz">hello@budgettrails.nz</a>, <a href="tel:+64 9 555 0123">+64 9 555 0123</a> — ID: IRD 123-456-789 (sample)
+  </div>
+</header>
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Food</li></ol></nav>
+<main id="main" class="container">
+
+<h1>Food & markets</h1>
+<section class="card">
+  <h2>Local picks</h2>
+  <ul class="list-cards" id="foodList"></ul>
+</section>
+<section class="card">
+  <h2>Hygiene checklist</h2>
+  <ul class="checklist">
+    <li>Hot foods held above 60°C</li>
+    <li>Busy stalls turn over faster</li>
+    <li>Drink safe tap water; use refill stations</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>Typical daily budget by tier</h2>
+  <div class="tabs" role="tablist" aria-label="Budget tiers">
+    <button role="tab" aria-selected="true" aria-controls="tab-ss" id="tabbtn-ss">Shoestring</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-bu" id="tabbtn-bu">Budget</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-mi" id="tabbtn-mi">Mid</button>
+    <button role="tab" aria-selected="false" aria-controls="tab-co" id="tabbtn-co">Comfort</button>
+  </div>
+  <div id="tab-ss" role="tabpanel" aria-labelledby="tabbtn-ss">
+    <table class="striped">
+      <thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>INR</td><td data-bind="tier.Shoestring.inr">2,500</td></tr>
+        <tr><td>USD</td><td data-bind="tier.Shoestring.usd">30</td></tr>
+        <tr><td>AUD</td><td data-bind="tier.Shoestring.local">45</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-bu" role="tabpanel" aria-labelledby="tabbtn-bu" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>INR</td><td data-bind="tier.Budget.inr">4,500</td></tr>
+        <tr><td>USD</td><td data-bind="tier.Budget.usd">55</td></tr>
+        <tr><td>AUD</td><td data-bind="tier.Budget.local">80</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-mi" role="tabpanel" aria-labelledby="tabbtn-mi" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>INR</td><td data-bind="tier.Mid.inr">9,000</td></tr>
+        <tr><td>USD</td><td data-bind="tier.Mid.usd">110</td></tr>
+        <tr><td>AUD</td><td data-bind="tier.Mid.local">160</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div id="tab-co" role="tabpanel" aria-labelledby="tabbtn-co" hidden>
+    <table class="striped"><thead><tr><th>Currency</th><th>Per person / day</th></tr></thead>
+      <tbody>
+        <tr><td>INR</td><td data-bind="tier.Comfort.inr">17,000</td></tr>
+        <tr><td>USD</td><td data-bind="tier.Comfort.usd">210</td></tr>
+        <tr><td>AUD</td><td data-bind="tier.Comfort.local">300</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">Prices are indicative; confirm on provider’s site. Last updated <span data-bind="last_updated">2025-10-18</span>.</p>
+</section>
+
+
+<section class="card">
+  <h2>Quick checklist</h2>
+  <ul class="checklist"><li>Note market opening days</li><li>Carry reusable bottle</li><li>Ask for ingredients (veg/vegan)</li></ul>
+</section>
+
+
+<section class="notice info">
+  <h3>How to book this</h3>
+  <ol class="compact">
+    <li>Shortlist 2–3 options with free cancellation.</li>
+    <li>Check area noise, late check-in, luggage rules.</li>
+    <li>Compare refundable vs. non-refundable totals.</li>
+    <li>Save confirmation offline and set reminders.</li>
+  </ol>
+  <p><a class="btn small" href="how-to-book.html">See full booking steps</a></p>
+</section>
+
+
+<p class="related">Related: <a href="stay.html">Stay</a> • <a href="transport.html">Transport</a> • <a href="costs.html">Costs</a></p>
+
+
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="container grid four">
+    <section>
+      <h3>Budget Trails Australia</h3>
+      <p class="tagline">Plan smart. Spend less. See more.</p>
+      <p><strong>Country:</strong> Australia<br>
+      <strong>Guide:</strong> Kai Turner</p>
+    </section>
+    <section>
+      <h4>Explore</h4>
+      <ul class="list">
+        <li><a href="stay.html">Where to Stay</a></li>
+        <li><a href="transport.html">Getting Around</a></li>
+        <li><a href="things-to-do.html">Things to Do</a></li>
+        <li><a href="food.html">Food & Markets</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Plan</h4>
+      <ul class="list">
+        <li><a href="itineraries.html">Itineraries</a></li>
+        <li><a href="costs.html">Budget Calculator</a></li>
+        <li><a href="start-here.html">Start Here</a></li>
+        <li><a href="how-to-book.html">How to Book</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>Legal</h4>
+      <ul class="list">
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="container small">© 2025 Budget Trails Australia. Content is informational. Prices shown are indicative (last updated 2025-10-18).</div>
+</footer>
+</body>
+</html>

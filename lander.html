@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome — Budget Trails Australia</title>
+  <meta name="description" content="Discover Budget Trails Australia — your trusted local guide for affordable travel in Australia." />
+  <link rel="stylesheet" href="assets/popup.css">
+    <script src="assets/popup.js" defer></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        PopupLander(); // only for lander.html
+    });
+    </script>
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#0f172a; --muted:#475569;
+      --brand:#0e7c86; --brand-2:#0ea5a3; --card:#f8fafc;
+      --line:#e2e8f0; --radius:14px; --space:16px; --max:72rem;
+      --shadow:0 10px 30px rgba(2,44,53,.08);
+      --step-1: clamp(18px, 4vw, 22px);
+      --step-2: clamp(24px, 5vw, 32px);
+      --step-3: clamp(32px, 6vw, 40px);
+    }
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);}
+    .hero{display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:100vh;
+      background:linear-gradient(120deg,var(--brand),var(--brand-2));color:#fff;text-align:center;padding:2rem;}
+    h1{font-size:var(--step-3);margin:0 0 1rem;font-weight:800;}
+    p{font-size:var(--step-1);max-width:600px;margin:0 auto 1.5rem;line-height:1.6;}
+    .btn{display:inline-block;background:#fff;color:var(--brand);border-radius:999px;padding:.8rem 1.4rem;
+      font-weight:600;text-decoration:none;transition:all .25s;}
+    .btn:hover{transform:translateY(-2px);background:#f8fafc;}
+    .notice{background:rgba(255,255,255,0.1);padding:.6rem 1rem;border-radius:var(--radius);font-size:.9rem;margin-top:1rem;}
+    footer{position:absolute;bottom:0;width:100%;text-align:center;padding:1rem 0;color:rgba(255,255,255,0.7);font-size:.85rem;}
+    @media (max-width:640px){ h1{font-size:var(--step-2);} p{font-size:1rem;} }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>Welcome to <br>Budget Trails Australia</h1>
+    <p>Plan smarter trips in Australia — compare costs, find local neighborhoods, and discover honest, ad-safe travel advice curated by locals.</p>
+    <a href="index.html" class="btn">Enter the Guide</a>
+    <div class="notice">Trusted by independent travelers worldwide 🌏</div>
+  </section>
+  <footer>
+    © 2025 Budget Trails Australia — All rights reserved.
+  </footer>
+</body>
+</html>

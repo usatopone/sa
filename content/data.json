@@ -1,0 +1,182 @@
+{
+  "site_name": "Budget Trails AU",
+  "country": "Australia",
+  "local_currency": "AUD",
+  "exchange_to_usd": 0.65,
+  "last_updated": "2025-10-18",
+  "tiers": {
+    "Shoestring": {
+      "inr": 2500,
+      "usd": 30,
+      "local": 45
+    },
+    "Budget": {
+      "inr": 4500,
+      "usd": 55,
+      "local": 80
+    },
+    "Mid": {
+      "inr": 9000,
+      "usd": 110,
+      "local": 160
+    },
+    "Comfort": {
+      "inr": 17000,
+      "usd": 210,
+      "local": 300
+    }
+  },
+  "neighborhoods": [
+    {
+      "name": "Sydney CBD",
+      "vibe": "central",
+      "avg_nightly_local": 220,
+      "pros": [
+        "walkable",
+        "transport"
+      ],
+      "cons": [
+        "pricey"
+      ]
+    },
+    {
+      "name": "Newtown",
+      "vibe": "creative",
+      "avg_nightly_local": 140,
+      "pros": [
+        "food",
+        "nightlife"
+      ],
+      "cons": [
+        "late noise"
+      ]
+    },
+    {
+      "name": "Bondi",
+      "vibe": "beach",
+      "avg_nightly_local": 180,
+      "pros": [
+        "beach"
+      ],
+      "cons": [
+        "crowds"
+      ]
+    }
+  ],
+  "transport": {
+    "from_airport": [
+      {
+        "city": "Sydney",
+        "mode": "train",
+        "time_min": 15,
+        "cost_local": 20,
+        "notes": "tap-on card, off-peak cheaper"
+      },
+      {
+        "city": "Sydney",
+        "mode": "bus",
+        "time_min": 35,
+        "cost_local": 14,
+        "notes": "cheapest daytime"
+      },
+      {
+        "city": "Sydney",
+        "mode": "taxi",
+        "time_min": 25,
+        "cost_local": 55,
+        "notes": "night/surge varies"
+      }
+    ],
+    "local": [
+      {
+        "mode": "metro/bus/ferry",
+        "single_fare_local": 3.2,
+        "daily_cap_local": 17.8,
+        "last_train": "00:30"
+      }
+    ],
+    "routes": [
+      {
+        "from": "CBD",
+        "to": "Bondi Beach",
+        "best_mode": "bus",
+        "time_min": 30,
+        "cost_local": 4
+      }
+    ]
+  },
+  "attractions": [
+    {
+      "name": "Royal Botanic Garden",
+      "price_local": 0,
+      "best_time": "morning",
+      "free_day": "daily",
+      "notes": "shade & harbor views"
+    },
+    {
+      "name": "Sydney Opera House Tour",
+      "price_local": 45,
+      "best_time": "early",
+      "free_day": "",
+      "notes": "book early weekends"
+    }
+  ],
+  "food": [
+    {
+      "dish": "Meat pie",
+      "where": "bakery",
+      "cost_local": 6,
+      "hygiene_tip": "hot holding >60\u00b0C"
+    },
+    {
+      "dish": "Flat white",
+      "where": "caf\u00e9",
+      "cost_local": 4.5,
+      "hygiene_tip": "busy shops = fresher milk"
+    }
+  ],
+  "itineraries": {
+    "48h": [
+      {
+        "time": "09:00",
+        "place": "Circular Quay walk",
+        "cost_local": 0,
+        "note": "harbor views"
+      },
+      {
+        "time": "11:00",
+        "place": "Ferry to Manly",
+        "cost_local": 9,
+        "note": "sit starboard outbound"
+      }
+    ],
+    "1d": [],
+    "3d": [],
+    "5d": [],
+    "7d": []
+  },
+  "safety": {
+    "scams": [
+      "ticket overpricing",
+      "unlicensed cabs"
+    ],
+    "emergency_numbers": {
+      "police": "000",
+      "ambulance": "000"
+    },
+    "etiquette": [
+      "queue politely",
+      "tap on/off public transit"
+    ]
+  },
+  "faq": [
+    {
+      "q": "Is tap water safe?",
+      "a": "Yes in major cities. Carry a refillable bottle."
+    },
+    {
+      "q": "Cash or card?",
+      "a": "Cards & contactless widely accepted; keep small cash for markets."
+    }
+  ]
+}

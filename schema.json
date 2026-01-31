@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Budget Trails AU",
+      "image": "assets/placeholder-hero.jpg",
+      "description": "Budget Trails AU \u2014 local, original budget planning guide for Australia.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "Australia"
+      },
+      "telephone": "+61 2 5550 1234",
+      "email": "hello@budgettrails.au",
+      "url": "index.html",
+      "identifier": "ABN 12 345 678 910 (sample)"
+    }
+  ]
+}
